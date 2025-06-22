@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msit.edu.in</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(bg1.jpg);
+            background-size: cover;
+            background-repeat: repeat-y;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .main {
+            animation: shown 3s linear;
+        }
+
+        @keyframes shown {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.1;
+            }
+
+            20% {
+                opacity: 0.2;
+            }
+
+            30% {
+                opacity: 0.3;
+            }
+
+            40% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            60% {
+                opacity: 0.6;
+            }
+
+            70% {
+                opacity: 0.7;
+            }
+
+            80% {
+                opacity: 0.8;
+            }
+
+            90% {
+                opacity: 0.9;
+            }
+
+            100% {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        a {
+            color: black;
+            font-style: italic;
+            text-decoration: none;
+        }
+
+        .material-symbols-outlined {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        li.social {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        li.nav {
+            display: flex;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .slideshow {
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            place-items: center;
+        }
+
+        .box {
+            /* change height and width to adjust the slideshow window */
+            max-width: 100vw;
+            width: 95%;
+            height: 100%;
+        }
+
+        .images {
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            background-image: url(https://w0.peakpx.com/wallpaper/888/665/HD-wallpaper-dragon-blue-abstract-blue-dragon-neon.jpg);
+            animation: slideshow 20s linear infinite;
+        }
+
+        @keyframes slideshow {
+            0% {
+                background-image: url("s1.jpg");
+                opacity: 0.5;
+
+            }
+
+            25% {
+                background-image: url("s2.jpg");
+                opacity: 0.5;
+            }
+
+            50% {
+                background-image: url("s3.jpg");
+                opacity: 0.5;
+            }
+
+            75% {
+                background-image: url("s4.jpg");
+                opacity: 0.5;
+            }
+
+            100% {
+                background-image: url("s5.jpg");
+                opacity: 0.5;
+            }
+        }
+
+        #nav {
+            margin-top: 20px;
+            display: flex;
+            font-size: 12px;
+        }
+
+        #link {
+            padding: 10px;
+            display: flex;
+            font-size: 12px;
+        }
+
+        .row1 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            background-image: linear-gradient(olive, antiquewhite);
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-evenly;
+            background-image: linear-gradient(antiquewhite, grey)
+        }
+        #facilities{
+            display: flex;
+            flex-direction: column;
+        }
+        #facility_list {
+            display: none;
+
+        }
+
+        #facilities:hover #facility_list {
+            display: block;
+            background-color: rgb(176, 176, 87);
+            color: black;
+            z-index: 10;
+        }
+
+        #course_list {
+            display: none;
+
+        }
+
+        #courses:hover #course_list {
+            display: block;
+            background-color: rgb(176, 176, 87);
+            color: black;
+        }
+
+        li.nav {
+            font-size: 25px;
+        }
+
+        .cont1 {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            display: flex;
+            height: 100vh;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .para1 {
+            width: 60vw;
+            padding: 20px 50px;
+        }
+
+        .para2 {
+            padding: 20px 50px;
+        }
+
+        .cont1::before {
+            content: " ";
+            background-image: url("bg2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            height: 1400px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .cont2 {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            display: flex;
+            height: 100vh;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .para4 {
+            width: 60vw;
+            padding: 20px 50px;
+        }
+
+        .para3 {
+            padding-left: 27vw;
+        }
+
+        .cont2::before {
+            content: " ";
+            background-image: url("bg3.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            height: 950px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .cont3 {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            display: flex;
+            height: 100vh;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .para5 {
+            width: 60vw;
+            padding: 20px 50px;
+        }
+
+        .para6 {
+            padding: 20px 50px;
+        }
+
+        .cont3::before {
+            content: " ";
+            background-image: url("bg4.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            height: 1000px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .cont4 {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            display: flex;
+            height: 100vh;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .para8 {
+            width: 60vw;
+            padding: 20px 50px;
+        }
+
+        .para7 {
+            padding-left: 27vw;
+        }
+
+        .cont4::before {
+            content: " ";
+            background-image: url("bg5.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            height: 800px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .cont5 {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            display: flex;
+            height: 100vh;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .para9 {
+            width: 60vw;
+            padding: 20px 50px;
+        }
+
+        .para10 {
+            padding: 20px 50px;
+        }
+
+        .cont5::before {
+            content: " ";
+            background-image: url("bg6.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            height: 1100px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .cont6 {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            display: flex;
+            height: 100vh;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .para12 {
+            width: 60vw;
+            padding: 20px 50px;
+        }
+
+        .para11 {
+            padding-left: 27vw;
+        }
+
+        .cont6::before {
+            content: " ";
+            background-image: url("bg7.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: absolute;
+            height: 1000px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .maps{
+            width: 100vw;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="head">
+            <!-- 1st row  -->
+            <div class="row1">
+                <!-- top left  -->
+                <div class="logo">
+                    <img src="https://msit.edu.in/assets/images/logo_msit.png" alt="MSIT" id="msit_logo">
+                </div>
+                <!-- between logo and socials  -->
+                <div class="banner">
+                    <h1 id="banner">MEGHNAD SAHA INSTITUTE OF TECHNOLOGY</h1>
+                    <hr>
+                    <span id="approve">Approved by AICTE, Govt. of India and affiliated to Maulana Abul Kalam Azad
+                        University of Technology, West Bengal</span>
+                </div>
+                <!-- top right  -->
+                <nav class="social">
+                    <ul id="link">
+                        <li class="social">|<a href="tel:+917044598807">+917044598807</a>|</li>
+                        <li class="social">|<a href="mailto:info@msit.edu.in" target=_blank>info@msit.edu.in</a>|</li>
+                        <li class="social">|<a href="https://www.instagram.com/msitkolkata/"
+                                target="_blank">Instagram</a>|</li>
+                        <li class="social">|<a href="https://www.facebook.com/meghnad.saha.institute.of.technology/"
+                                target="_blank">Facebook</a>|</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 2nd row with hover properties  -->
+            <div class="row2">
+                <nav class="nav">
+                    <ul id="nav">
+                        <li class="nav" id="home">|<a href="#home">Home</a>|</li>
+                        <li class="nav" id="about">|<a href="#head1">About</a>|</li>
+                        <li class="nav" id="courses">|<a href="#courses">Courses<span class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span></a>|
+                            <ul style="list-style: none;" id="course_list">
+                                <li>CSE</li>
+                                <hr>
+                                <li>CSBS</li>
+                                <hr>
+                                <li>IT</li>
+                                <hr>
+                                <li>Cyber Security</li>
+                                <hr>
+                                <li>DS</li>
+                                <hr>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav" id="faculty">|<a href="#faculty">Faculty</a>|
+                            <ul id="faculty_list">
+
+                            </ul>
+                        </li> -->
+                        <li class="nav" id="facilities">|<a href="#facilities">Facilities<span
+                                    class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span></a>|
+                            <ul style="list-style: none;" id="facility_list">
+                                <li><a href="#cont_2">Canteen</a></li>
+                                <hr>
+                                <li><a href="#cont_3">Library</a></li>
+                                <hr>
+                                <li><a href="#cont_4">PlayGround</a></li>
+                                <hr>
+                                <li><a href="#cont_5">Gaming Zone</a></li>
+                                <hr>
+                                <li><a href="#cont_6">Laboratories</a></li>
+                                <hr>
+                            </ul>
+                        </li>
+                        <!-- a new page is to be made and linked -->
+                        <li class="nav">|<a href="#placement">Placement</a>|</li>
+                    </ul>
+                </nav>
+            </div>
+        </header><br>
+        <main id="home" class="container">
+            <!-- transitions of quotes -->
+            <div class="quotes">
+                <div class="slideshow">
+                    <div class="box">
+                        <div class="images"></div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="cont1">
+                <div class="para1">
+                    <h1 id="head1"><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                        </span>"College Chronicles: A Journey Through University Life"</h1>
+                    College is undoubtedly a time of immense personal growth, self-discovery, and important
+                    decision-making. It is a period filled with experiences, triumphs, and challenges that shape the
+                    trajectory of our lives. As current or prospective college students, seeking insights and guidance
+                    from those who have already traversed this transformative phase can be invaluable. So, here are some
+                    reflections on the experiences, triumphs, and challenges that one may encounter during their college
+                    journey.
+                    Experiences in college can vary greatly from person to person. For some, it is a time of
+                    exhilarating independence, exploring new passions, and forming lifelong friendships. For others, it
+                    may be a period of homesickness, grappling with new responsibilities, and a sense of feeling lost.
+                    But regardless of the nature of your individual experiences, remember that each moment contributes
+                    to your personal growth.
+
+                    Triumphs are inherent to the college experience and often come in various forms. It could range from
+                    achieving great academic success by consistently earning top grades, securing coveted internships or
+                    research opportunities, or being recognized for extracurricular achievements. However, it is
+                    important to remember that triumphs are not limited to conventional wins. Personal growth,
+                    overcoming obstacles, and finding your passion or purpose are equally noteworthy triumphs.
+                    Celebrating these victories, big or small, is essential for building confidence and resilience.
+
+                    Alongside triumphs, college life also brings forth a multitude of challenges. Academic pressure, the
+                    transition to a new environment, and navigating a diverse social landscape are just a few examples.
+                    College demands a great deal of discipline, time management, and self-motivation. It can be
+                    overwhelming, but it is important to remember that challenges are a fundamental part of personal
+                    growth. Embrace them as opportunities to develop new skills, foster resilience, and discover hidden
+                    strengths within yourself.
+
+                    To navigate through the triumphs and challenges, seeking insights and guidance is vital. Here are a
+                    few pieces of advice to consider:
+                    <ol start="1" class="para2">
+                        <li class="para2">Embrace opportunities for personal growth: College is a time to explore and
+                            experiment with new experiences. Take advantage of clubs, organizations, and social
+                            activities to broaden your horizons, develop new skills, and discover your true passions.
+                        </li>
+                        <li class="para2">Prioritize self-care: Remember to take care of your physical and mental
+                            well-being. College life can be demanding, and neglecting self-care can hinder your ability
+                            to navigate the challenges effectively. Create a routine that includes sufficient sleep,
+                            exercise, healthy eating, and mental relaxation.</li>
+                        <li class="para2">Seek support from your network: College is not meant to be a solitary journey.
+                            Build a support network of friends, peers, mentors, and faculty who genuinely care about
+                            your success. Lean on them during difficult times, seek their advice, and offer your support
+                            to others as well.</li>
+                        <li class="para2">Develop effective time management skills: College is a balancing act between
+                            academics, social life, extracurricular involvement, and personal responsibilities. Creating
+                            a schedule, setting goals, and honing your time management skills will help you stay
+                            organized and make the most of your college experience.</li>
+                        <li class="para2">Embrace failure as a learning opportunity: Failure is an integral part of
+                            growth. Do not be discouraged by setbacks or disappointments. Instead, learn from them,
+                            adapt, and use them as stepping stones to success.</li>
+                    </ol>
+                </div>
+            </div><br><br>
+            <div class="cont2" id="cont_2">
+                <div class="para3">
+                    <h1 id="head2"><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                        </span>"Foodie On Campus: Exploring Culinary Delights near College Area"</h1>
+                    <ol class="para4">
+                        <li class="para4">The College Canteen:
+                            Situated right on campus, The College Canteen is a hub of deliciousness. Here, you can
+                            indulge in a wide range of options, from freshly made sandwiches and wraps to hearty hot
+                            meals, all reasonably priced to cater to budget-conscious students. The canteen is a go-to
+                            spot for quick bites between classes, and you can always count on their daily specials for a
+                            delightful surprise.</li>
+                        <li class="para4">Local Delights:
+                            Just a stone's throw away from the college, this restaurant offers an authentic local
+                            experience. Local Delights specializes in regional cuisines, serving up traditional dishes
+                            with flavors that transport you to different parts of the country. From spicy curries to
+                            mouthwatering street food, this eatery is a must-visit for those looking to explore the
+                            local culinary scene.</li>
+                        <li class="para4">The Healthy Corner:
+                            For health-conscious foodies, The Healthy Corner is the perfect spot. Nestled in a cozy
+                            corner near the college, this restaurant focuses on offering wholesome and nutritious meals.
+                            From fresh salads and smoothie bowls to protein-packed wraps and grain bowls, every item on
+                            their menu is designed to keep you energized throughout your busy day.</li>
+                        <li class="para4">International Fusion:
+                            Craving a taste of the world? Head over to International Fusion, where different global
+                            cuisines collide. This restaurant offers a unique dining experience, fusing flavors from
+                            various countries into mouthwatering creations. Whether it's a sushi burrito, a loaded
+                            falafel pita, or a hearty bowl of ramen, International Fusion has something for everyone in
+                            search of a culinary adventure.</li>
+                        <li class="para4">Dessert Haven:
+                            After a long day of lectures, treat yourself to something sweet at Dessert Haven. This
+                            charming little café specializes in delectable desserts that are sure to satisfy your sugar
+                            cravings. Indulge in a heavenly slice of cake, a creamy scoop of gelato, or a warm batch of
+                            freshly baked cookies. With an inviting atmosphere, it's the ideal spot to relax, unwind,
+                            and indulge your sweet tooth.</li>
+                    </ol>
+                    These local food canteens and restaurants near the college area offer a diverse range of culinary
+                    experiences, ensuring that every student can find a place that caters to their tastes and
+                    preferences. From quick bites to delightful meals, these eateries provide a variety of options to
+                    satisfy your cravings, leaving you wanting to come back for more. So, why not grab a few friends and
+                    embark on a flavorful journey through these local gems?
+                </div>
+            </div><br><br>
+            <div class="cont3" id="cont_3">
+                <div class="para5">
+                    <h1 id="head3"><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                        </span>"Libraries: Stores the Energy That Fuels the Imagination"</h1>
+                    <ul class="para6">
+                        <li class="para6">The College Library
+                            The college library is an important resource for students and faculty members alike. It is a
+                            place where individuals can access a wide range of resources, including books, journals,
+                            databases, and other materials that are relevant to their studies or research.</li>
+                        <li class="para6">Collection
+                            The library has an extensive collection covering a wide range of fields such as science,
+                            social sciences, humanities, and the arts. In addition to books, the library also provides
+                            access to various electronic resources including e-books, journals, and databases. There are
+                            also specialized collections, such as rare books and special collections that contain unique
+                            and historic material.</li>
+                        <li class="para6">Study Spaces
+                            The library offers many different study spaces to cater to various needs. There are
+                            individual study carrels for quiet study, group study rooms for collaborative work, and
+                            computer labs for research and writing assignments. The college library also has spaces for
+                            students who prefer to work in a communal setting, including open spaces with comfortable
+                            seating and natural lighting as well as designated quiet spaces.</li>
+                        <li class="para6">Services
+                            The college library offers a variety of services to make sure that students and faculty have
+                            access to the resources and support they need. There are trained librarians who can assist
+                            with research, citation management, and other aspects of academic writing. The library also
+                            provides interlibrary loan services, allowing users to request materials from other
+                            libraries if needed.</li>
+                        <li class="para6">Other amenities
+                            Apart from the academic resources, the college library is also equipped with other amenities
+                            such as printing services, coffee shops, and comfortable seating. This provides an added
+                            level of convenience and comfort, making it easier for students to stay focused and engaged
+                            while studying.</li>
+                    </ul>
+                </div>
+            </div><br><br>
+            <div class="cont4" id="cont_4">
+                <div class="para7">
+                    <h1 id="head4"><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                        </span>"The PlayGround: The Perfect Place to Recharge"</h1>
+                    <ul class="para8">
+                        <li class="para8"> The College Playground
+                            The college playground is a vital space for students to unwind, relax, and engage in
+                            physical activities. It is a place where students can come together to participate in
+                            recreational activities, keep fit, and connect with others in a social setting.</li>
+                        <li class="para8">Facilities
+                            The college playground typically offers a wide variety of facilities designed for a range of
+                            sports and games. These include a soccer field, basketball court, volleyball net, running
+                            track, and equipment for sports like badminton, cricket, and table tennis. This ensures that
+                            there is something for everyone, no matter their interests or fitness level.</li>
+                        <li class="para8">Accessibility
+                            The college playground is typically accessible to all students, regardless of their physical
+                            abilities. It is designed to be a welcoming and inclusive space for everyone. Facilities are
+                            often modified to be wheelchair accessible or have separate areas for those with
+                            disabilities.</li>
+                        <li class="para8">Safety
+                            The safety of students using the playground is of utmost importance. The playground area is
+                            regularly inspected and maintained to ensure that it is safe for use. There are also trained
+                            staff members who monitor student activities and keep an eye out for any risks.</li>
+                        <li class="para8">Benefits
+                            Regular use of the college playground offers multiple benefits for students. Exercise is
+                            essential for maintaining a healthy lifestyle, and the playground offers an active outlet
+                            for students who may otherwise spend most of their day sitting in classrooms or studying.
+                            Additionally, socializing with peers in a fun and relaxed environment can reduce stress and
+                            improve mental wellbeing.</li>
+                    </ul>
+                </div>
+            </div><br><br>
+            <div class="cont5" id="cont_5">
+                <div class="para9">
+                    <h1 id="head5"><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                        </span>"Gaming Zone: I'm A Gamer"</h1>
+                    <ul class="para10">
+                        <li class="para10">The Online Gaming Zone in College
+                            The online gaming zone in the college is a dedicated space where students can engage in
+                            multiplayer online gaming and connect with fellow gamers. It provides an exciting and
+                            immersive environment for students who are passionate about gaming and want to socialize
+                            with like-minded individuals.</li>
+                        <li class="para10">The online gaming zone is equipped with high-performance gaming PCs, gaming
+                            consoles, and the latest gaming accessories. The computers are specially optimized to handle
+                            graphics-intensive games and provide smooth gameplay. The consoles offer a wide range of
+                            popular multiplayer games, ensuring there are options for everyone's interests.</li>
+                        <li class="para10">High-Speed Internet
+                            To ensure a lag-free and uninterrupted gaming experience, the online gaming zone is
+                            connected to a high-speed internet connection. This allows students to enjoy seamless online
+                            gaming sessions and ensures minimal latency for enhanced gameplay.</li>
+                        <li class="para10">Variety of Games
+                            The online gaming zone offers a diverse collection of games to cater to different
+                            preferences and genres. Whether students enjoy first-person shooters, role-playing games,
+                            strategy games, or sports games, there is something for everyone. The collection is
+                            regularly updated to keep up with the latest releases and trends in the gaming industry.
+                        </li>
+                        <li class="para10">Tournaments and Events
+                            The online gaming zone also organizes tournaments and events to foster a sense of
+                            competitiveness and community among the gaming enthusiasts on campus. These events create
+                            opportunities for students to showcase their gaming skills, compete against each other, and
+                            win prizes. They also serve as platforms for networking and making new friends who share
+                            similar interests.</li>
+                        <li class="para10">Socialization and Collaboration
+                            The online gaming zone allows students to socialize and collaborate with fellow gamers. It
+                            provides a space for students from different backgrounds to bond over their love for gaming
+                            and build lasting relationships. Students can form teams, participate in multiplayer games
+                            together, and even organize gaming clubs or communities.</li>
+                    </ul>
+                </div>
+            </div><br><br>
+            <div class="cont6" id="cont_6">
+                <div class="para11">
+                    <h1 id="head6"><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                        </span>"Laboratory: Inovation Of Science"</h1>
+                    <ul class="para12">
+                        <li class="para12">The College Laboratory
+                            The college laboratory is a dedicated space where students learn through hands-on
+                            experimentation and practical application of theoretical concepts. It is an essential
+                            component of many academic programs, particularly in the fields of science, engineering, and
+                            technology.</li>
+                        <li class="para12">State-of-the-Art Equipment
+                            The college laboratory is equipped with state-of-the-art instruments, equipment, and tools
+                            that are necessary for conducting experiments and research. This includes microscopes,
+                            spectrometers, centrifuges, beakers, test tubes, and various measuring instruments. The use
+                            of advanced equipment allows students to gain practical experience with cutting-edge
+                            technology that is utilized in their respective fields.</li>
+                        <li class="para12">Safety Measures
+                            Safety is a top priority in the college laboratory. There are strict safety protocols and
+                            guidelines in place to ensure the well-being of students and staff. This includes the
+                            availability of safety equipment such as gloves, goggles, lab coats, and emergency eyewash
+                            stations. Additionally, students receive proper training on safety procedures before using
+                            any equipment or conducting experiments.</li>
+                        <li class="para12">Practical Application of Theory
+                            In the college laboratory, students have the opportunity to apply theoretical knowledge
+                            gained in the classroom to real-world situations. They can observe phenomena, conduct
+                            experiments, collect data, analyze results, and draw conclusions. This hands-on approach
+                            helps students develop critical thinking, problem-solving, and analytical skills that are
+                            vital for their academic and professional growth.</li>
+                        <li class="para12">Collaboration and Teamwork
+                            The college laboratory encourages collaboration and teamwork among students. Many
+                            experiments and projects require students to work together, fostering effective
+                            communication, cooperation, and the exchange of ideas. Collaborative work in the lab
+                            prepares students for the type of work they may encounter in their future careers, where
+                            teamwork is often essential.</li>
+                        <li class="para12">Research and Innovation
+                            College laboratories often serve as hubs for research and innovation. Faculty members and
+                            students may conduct research projects within the laboratory to explore new concepts,
+                            discover new insights, and contribute to the advancement of knowledge in their respective
+                            fields. These research activities provide valuable opportunities for students to engage in
+                            cutting-edge research and gain a deeper understanding of their areas of interest.</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+
+        </main>
+        <footer class="foot" >
+                <div class="maps"><a href="https://www.google.com/maps/place/Meghnad+Saha+Institute+Of+Technology/@22.510475,88.4125134,17z/data=!4m14!1m7!3m6!1s0x3a0273f14bca0c15:0xbd1ef59baa5eafd0!2sMeghnad+Saha+Institute+Of+Technology!8m2!3d22.5104701!4d88.4150883!16s%2Fm%2F02rfdv4!3m5!1s0x3a0273f14bca0c15:0xbd1ef59baa5eafd0!8m2!3d22.5104701!4d88.4150883!16s%2Fm%2F02rfdv4?entry=ttu"><img src="bg8.png" alt="" height="300px" width="100%"></a>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>
